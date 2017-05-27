@@ -4,6 +4,8 @@ Hoon H.
 
 [![Build Status](https://travis-ci.org/eonil/prototype-signet.swift.svg?branch=master)](https://travis-ci.org/eonil/prototype-signet.swift)
 
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg)](https://github.com/Carthage/Carthage)
+
 Signal delivery network in a thread.
 
 Install
