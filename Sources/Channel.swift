@@ -40,7 +40,7 @@ public class TransmittableChannel<T>: Channel<T> {
     ///
     /// Watches two sources, and produces reduced state.
     ///
-    /// This produces for each time any of two sources are emitting new state.
+    /// This produces for each time any of two sources emits a new state.
     /// Latest state of each other will be used for reducing.
     /// Latest state is stored in an internal shared storage, so this will work
     /// even one of source dies early.
@@ -84,7 +84,7 @@ public class TransmittableChannel<T>: Channel<T> {
 /// An object which can be watched by a channel.
 /// This is read-only representation of mutating state over time.
 ///
-/// `Watchable`s stores its current state, but code users cannot
+/// `Watchable`s store its current state, but code users cannot
 /// mutate the state directly. You need to use one of its 
 /// subclasses for your needs.
 ///
@@ -155,7 +155,6 @@ public class Channel<T> {
     fileprivate func unwatch() {
         unwatchImpl?()
     }
-
 
 
 
